@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - News Aggregator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>News Aggregator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="ind4.html">Login</a></li>
+                <li><a href="ind5.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form id="loginForm">
+            <label for="email">Email:</label><br>
+            <input type="email" id="loginEmail" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="loginPassword" name="password" required><br><br>
+
+            <button type="submit" onclick="sucess()">Login</button><br><br>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us: info@newsaggregator.com</p>
+    </footer>
+
+    <script src="./assets/js/script.js">
+        function sucess(){
+            alert("Fetching the login details!!");
+        }
+    </script>
+</body>
+</html>
